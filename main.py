@@ -41,13 +41,13 @@ async def on_message(message):
 # Check time async
 
 
-@tasks.loop(minutes=10)
+@tasks.loop(minutes=1)
 async def time_check():
     gen2 = Definitions.gen2_channel(client)
     pdt = Definitions.PDT()
     print('I am looping')
     # Check PDT Time
-    if (pdt >= ('20:00') or pdt <= ('6:00')) and gen2.name == '「🔊」General│#2':
+    if (pdt >= (20) or pdt <= (6)) and gen2.name == '「🔊」General│#2':
         await gen2.edit(name='「👿」Swamp')
         print('Changed to Swamp')
         print(pdt)
