@@ -8,7 +8,6 @@ import os
 import dotenv
 from discord.ext import tasks
 
-
 # env request
 
 dotenv.load_dotenv()
@@ -45,7 +44,7 @@ async def on_message(message):
 async def time_check():
     gen2 = Definitions.gen2_channel(client)
     pdt = Definitions.PDT()
-    print('I am looping')
+    #print('I am looping')
     # Check PDT Time
     if (pdt >= (20) or pdt <= (6)) and gen2.name == '「🔊」General│#2':
         await gen2.edit(name='「👿」Swamp')
