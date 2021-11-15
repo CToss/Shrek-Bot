@@ -51,9 +51,9 @@ async def time_check():
         await gen2.edit(name='「👿」Swamp')
         print('Changed to Swamp')
         print(pdt)
-    elif gen2.name == 'Swamp':
-        await gen2.edit(name='Rejects')
-        print('Changed to Rejects')
+    elif gen2.name == '「👿」Swamp':
+        await gen2.edit(name='「🔊」General│#2')
+        print('Changed to Gen2')
         print(pdt)
 
 
