@@ -46,11 +46,11 @@ async def time_check():
     pdt = Definitions.PDT()
     #print('I am looping')
     # Check PDT Time
-    if (pdt >= (20) or pdt <= (6)) and gen2.name == '「🔊」General│#2':
+    if (pdt >= (2000) or pdt <= (600)) and gen2.name == '「🔊」General│#2':
         await gen2.edit(name='「👿」Swamp')
         print('Changed to Swamp')
         print(pdt)
-    elif gen2.name == '「👿」Swamp':
+    elif (pdt < (2000) or pdt > (600)) and gen2.name == '「👿」Swamp':
         await gen2.edit(name='「🔊」General│#2')
         print('Changed to Gen2')
         print(pdt)

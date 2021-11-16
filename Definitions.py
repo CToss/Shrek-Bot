@@ -7,7 +7,7 @@ import datetime
 def PDT():
     tz = pytz.timezone('America/Los_Angeles')
     pdtime = datetime.datetime.now(tz)
-    pdtout = pdtime.strftime("%H")
+    pdtout = pdtime.strftime("%H%M")
     return int(pdtout)
 
 
