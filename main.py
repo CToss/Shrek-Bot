@@ -40,7 +40,7 @@ async def on_message(message):
 # Check time async
 
 
-@tasks.loop(minutes=1)
+@tasks.loop(minutes=10)
 async def time_check():
     gen2 = Definitions.gen2_channel(client)
     pdt = Definitions.PDT()
