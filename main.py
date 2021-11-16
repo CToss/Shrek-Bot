@@ -50,7 +50,7 @@ async def time_check():
         await gen2.edit(name='「👿」Swamp')
         print('Changed to Swamp')
         print(pdt)
-    elif (pdt < (2000) or pdt > (600)) and gen2.name == '「👿」Swamp':
+    else:
         await gen2.edit(name='「🔊」General│#2')
         print('Changed to Gen2')
         print(pdt)
