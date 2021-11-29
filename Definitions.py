@@ -1,5 +1,7 @@
+from discord import client
 import pytz
 import datetime
+
 
 # Timezone defines
 
@@ -16,12 +18,6 @@ def UTC():
     dtp = dt.strftime("%H:%M:%S")
     return(dtp)
 
-
-def checktime():
-    t = datetime.datetime.utcnow()
-    current_time = datetime.datetime.time(t).strftime("%H:%M:%S")
-    return(current_time)
-
 # channel defines
 
 
@@ -37,6 +33,3 @@ def botcom_channel(client):
     return(client.get_channel(841047847713112081))
 
 # def swamptime():
-
-
-# Channel name swap = General 2 into Swamp
